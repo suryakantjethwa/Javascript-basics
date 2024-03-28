@@ -40,11 +40,44 @@ console.log('Is Adult : ' , isAllAdult);
 //In this method atleast one element should satisfy the condition i.e. : OR
 //It will return true or false
 
-let arr5 = [1,2,3,4,5,6,7,8,9,10];
 let isChild = arr4.some((currItem, index, array) => {
    return currItem < 8;
 });
 console.log('Is Child : ' , isChild);
+
+
+
+//5. sort()
+
+// sorting of letters 
+var names = ["salesforce" , "facebook" , "Amazon"];
+console.log(names.sort());
+
+//sorting of numbers 
+var points = [3,2,8,4,8,12,54,98,23,56,235,3,56,35];
+let sortedValues = points.sort( (a,b) => {
+ return a-b;
+});
+console.log("Number sorting", sortedValues);
+
+
+//6. reduce methods
+
+let num = [32,432,23,4];
+let sum = num.reduce( (total , currItem) => {
+return total + currItem;
+}, 0);
+console.log('sum -> ', sum);
+
+
+//7. forEach method
+
+num.forEach( (currItem) => {
+  console.log(currItem)
+});
+
+
+
 
 
 
