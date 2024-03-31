@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" src="script.js"></script>
+    <script src="eventbubbling.js"></script>
 </head>
 <body>
 
     <div class="abc">Hello World!!</div>
     <div>Hello Salesforce</div>
     <div>Hello India</div>
+
+
+    <button onclick="callCustomMethod()" >Click</button>
+
+
+   <form onclick="alert('I am form')">
+        I am form 
+        <div onclick="alert('I am div')">
+            I am div
+            <p onclick="alert('I am p')">
+                I am p
+            </p>
+        </div>
+    </form> 
     
     
 </body>

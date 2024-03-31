@@ -13,8 +13,6 @@ console.log(UTILS.PId);
 
 
 //console.log(UTILS.subtract(5,3)); --> default exports can not be accessed like this 
-
-
 //Query selector 
 
 let element = document.querySelector('div');
@@ -33,6 +31,8 @@ let elementsArray = Array.from(elementAll);
 elementsArray.forEach((el) => {
   el.style.color = 'green';
 });
+
+
 
 
 // In LWC document.querySelector becomes 
